@@ -4,7 +4,7 @@ import Tab from '../src/tab.js';
 
 import '../assets/index.less';
 
-class Example extends Component{
+export default class Example extends Component{
 
     render() {
         return (
@@ -49,5 +49,3 @@ class Example extends Component{
         );
     }
 };
-
-ReactDOM.render(<Example />, document.getElementById('component-example-style'));

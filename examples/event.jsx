@@ -4,7 +4,7 @@ import Tab from '../src/tab.js';
 
 import '../assets/index.less';
 
-class Example extends Component{
+export default class Example extends Component{
 
     handleSelect(key) {
         console.log('选中' + key);
@@ -32,5 +32,3 @@ class Example extends Component{
         );
     }
 };
-
-ReactDOM.render(<Example />, document.getElementById('component-example-event'));

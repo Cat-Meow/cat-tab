@@ -8,7 +8,6 @@ class Tab extends Component {
         liveKey: React.PropTypes.string,
         prefixName: React.PropTypes.string,
         myStyle: React.PropTypes.string,
-
         stacked: React.PropTypes.bool,
         justified: React.PropTypes.bool
     }
