@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { setClass } from 'cat-util';
+import { setClass } from 'rs-util';
 
 class Content extends Component {
     static propTypes = {
@@ -7,7 +7,7 @@ class Content extends Component {
     }
 
     static defaultProps = {
-        prefixName: 'cat'
+        prefixName: 'salt'
     }
 
     render() {

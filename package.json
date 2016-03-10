@@ -1,10 +1,10 @@
 {
-  "name": "cat-tab",
-  "version": "1.0.0",
+  "name": "rs-tab",
+  "version": "0.1.0",
   "description": "",
   "main": "./dist/tab.js",
   "scripts": {
-    "dev": "node node_modules/.bin/cat-server",
+    "dev": "node node_modules/.bin/rs-server",
     "pre-publish": "node node_modules/.bin/pre-publish"
   },
   "author": "yanweiqing",
@@ -16,11 +16,12 @@
     "src/"
   ],
   "dependencies": {
-    "cat-util": "^1.0.8",
-    "react": "^0.14.x"
+    "react": "^0.14.x",
+    "rs-ui-core": "^0.1.0",
+    "rs-util": "^0.1.0"
   },
   "devDependencies": {
-    "regether-rc-server": "^0.1.1",
-    "react-dom": "^0.14.x"
+    "react-dom": "^0.14.x",
+    "rs-server": "^0.1.1"
   }
 }

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import Tab from '../src/tab.js';
 
 import '../assets/index.less';
@@ -24,7 +23,7 @@ export default class Example extends Component{
                     <Tab.Panel eventKey="3" tab="Tab3" disabled />
                 </Tab>
                 <Tab liveKey="2" myStyle="pills">
-                    <Tab.Panel eventKey="1" tab="Tab1" href="https://github.com/Cat-Meow"/>
+                    <Tab.Panel eventKey="1" tab="Tab1" href="https://github.com/react-salt/rs-tab"/>
                     <Tab.Panel eventKey="2" tab="Tab2" />
                     <Tab.Panel eventKey="3" tab="Tab3" disabled />
                 </Tab>

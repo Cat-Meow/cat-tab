@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { setClass } from 'cat-util';
+import { setClass } from 'rs-util';
 import Panel from './nav';
 import Content from './content';
 
@@ -13,7 +13,7 @@ class Tab extends Component {
     }
 
     static defaultProps = {
-        prefixName: 'cat',
+        prefixName: 'salt',
         myStyle: 'tabs',    //tabs/pills
         stacked: false,
         justified: false

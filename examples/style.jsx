@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import Tab from '../src/tab.js';
 
 import '../assets/index.less';
