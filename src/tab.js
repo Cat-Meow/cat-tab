@@ -19,6 +19,11 @@ class Tab extends Component {
         justified: false
     }
 
+    constructor(props) {
+        super(props);
+        this.handleSelect = this.handleSelect.bind(this);
+    }
+
     state = {
         liveKey: this.props.liveKey
     }
@@ -38,26 +43,22 @@ class Tab extends Component {
         });
     }
 
-    _renderNavs() {
+    renderNavs() {
         let self = this;
 
         return React.Children.map(this.props.children, child => {
             return React.cloneElement(child, {
                 liveKey: self.state.liveKey,
-                onClick: self.handleSelect.bind(self),
+                onClick: self.handleSelect,
                 extraCallBack: self.props.onSelect
             });
         });
     }
 
-    _renderContent() {
+    renderContent() {
         let self = this;
 
-        if (!this.props.children[0].props.children) {
-            return null;
-        }
-
-        return (
+        return this.props.children[0].props.children && (
             <div className={`${this.props.prefixName}-tab-content`}>
                 {
                     React.Children.map(this.props.children, child => {
@@ -86,9 +87,9 @@ class Tab extends Component {
         return (
             <div className={`${prefixName}-tab-container`}>
                 <ul className={classNames}>
-                    {this._renderNavs()}
+                    {this.renderNavs()}
                 </ul>
-                {this._renderContent()}
+                {this.renderContent()}
             </div>
         );
     }
